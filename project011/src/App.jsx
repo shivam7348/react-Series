@@ -13,6 +13,7 @@ function Reset() {
 
 function handleInput() {
   refElement.current.style.color= "blue"
+  refElement.current.value = "Arvind"
 }
 
 
