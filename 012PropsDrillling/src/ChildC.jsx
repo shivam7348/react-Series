@@ -6,4 +6,4 @@ function ChildC({name}) {
   )
 }
 
-export default ChildC
+export default ChildC;
