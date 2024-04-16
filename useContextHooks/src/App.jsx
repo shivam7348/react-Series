@@ -1,23 +1,30 @@
 import { createContext } from "react";
 import ChildA from "./ChildA";
-const data = createContext();
-const data1 = createContext();
+// imp create, provider, useContext
+const data = createContext()
+const data1 = createContext()
+const data3 = createContext()
+function App () {
 
-function App() {
-    const name = "Mahek"
-    const gender = "Female"
+    const name = "HArry"
+    const gender = "Male"
+    const arr = "SHiva"
+        
+   
     return (
-        <>
-        <data.Provider value={name}>
-            <data1.Provider value={gender}>
-                <ChildA/>
-            </data1.Provider>
-          
-        </data.Provider>
-       
-        </>
+    <> 
+    <data.Provider value = {name}>
+        <data1.Provider value ={gender}>
+            <data3.Provider value = {arr}>
+                <ChildA/>       
+            </data3.Provider>
+        
+
+        </data1.Provider>
+    </data.Provider>
+   
+    </>
     )
 }
-
 export default App;
-export {data, data1}
+export {data, data1, data3}

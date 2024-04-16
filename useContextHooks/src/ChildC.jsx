@@ -1,13 +1,15 @@
-import { useContext } from 'react';
-import {data, data1} from './App'
+import {data, data1, data3} from './App'
+
+import React, { useContext } from 'react'
+
+
 function ChildC() {
-    const Firstname = useContext(data);
-    const gender = useContext(data1);
-
-
+   const name =  useContext(data)
+   const gender = useContext(data1)
+   const array = useContext(data3)
   return (
     <>
-<h1> Hi my name {Firstname} and my gender {gender}</h1>
+    <h1> hi my name is {name}, and my gender{gender} {array}</h1>
     </>
   )
 }
